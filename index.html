@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <meta charset="utf-8"/>
+  <title>
+      John's CSC412 Page!
+  </title>
+
+  <script type="text/javascript">
+    function changeColor(){
+      var navbar = document.getElementsByClassName("navbar")[0];
+      var container = document.getElementsByClassName("container")[0];
+      navbar.style.backgroundColor=getRandomColor();
+      container.style.backgroundColor=getRandomColor();
+    }
+
+    function getRandomColor() {
+      var letters = '0123456789ABCDEF';
+      var color = '#';
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+  </script>
+
+      <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.png" alt="" width="100" title=""></a>
+        </div>
+      </div>
+      <button onClick="changeColor()">Change Color</button>
+      <nav>
+        <ul class="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class = "content">
+        <h2>Welcome to John's Website!</h2>
+        <h3>Hobbies</h3>
+        <ul div = "hobbies">
+          <li>Plays the Acoustic and Electric Guitar</li>
+          <li>Develops Android UI, webpages, and queries</li>
+        </ul>
+      </div>
+
+      <div class="resume">
+
+      </div>
+    </div>
+  </body>
+
+</html>
